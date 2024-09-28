@@ -25,8 +25,6 @@ While this method is effective, it has limitations, particularly when headers or
 
 In addition to carving complete files, examiners can also recover valuable file fragments. This is often applicable for non-compressed and non-encrypted files, such as text files, HTML documents, or data from a swap/page file.
 
-Various tools are available to aid in file carving, including Carver Recovery, Scalpel, and Bulk Extractor. While these tools can be highly beneficial, it's important for examiners to recognize that they may not always yield perfect results.
-
 ## Activity: Manual File Carving Using FTK Imager
 
 ### Tools Required:
