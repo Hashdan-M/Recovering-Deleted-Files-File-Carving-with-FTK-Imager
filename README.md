@@ -82,7 +82,7 @@ If the answers suggest that it is the actual EOF marker, the file runs from 0000
 
 <img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a3582dd9bbda828ea806d9f476a5652b197e7254/FTK%20Imager/3-9.png"/></a>
   
-Save the file with a **“.jpg”** extension on your desktop. Open the saved file to verify that it displays correctly.
+Save the file with a **“.jpg”** extension on your desktop. Open the saved file. The result should be identical to what is shown below.
 
 <img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a3582dd9bbda828ea806d9f476a5652b197e7254/FTK%20Imager/3-10.PNG"/></a>
 
