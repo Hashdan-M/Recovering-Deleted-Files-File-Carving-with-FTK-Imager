@@ -1,5 +1,12 @@
 <img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/4aa73bedd7db10391b518c13c82f52d892b55e87/FTK%20Imager/logo.jpg"/></a>
-<h1>Recovering Deleted Files: File Carving with FTK Imager</h1>
+<h1>Recovering Deleted Files & File Carving with FTK Imager</h1>
+
+## 1. Recovering Deleted Files
+
+One of the fundamental skills necessary for a forensic investigator is the ability to recover deleted files. When files are deleted, they remain on the storage medium until new data overwrites them. This means that even if a suspect attempts to erase evidence, those files can still be retrieved until the storage space is reused. For this experiment, we will utilize FTK Imager for the recovery process.
+
+## Activity: Manual File Carving Using FTK Imager
+
 File carving is both an art and a science, especially when dealing with corrupt Master File Tables (MFT) or File Allocation Tables (FAT). In such cases, it may be necessary to manually extract files from allocated space. Additionally, remnants of files can often be found in unallocated or slack space, which may contain valuable information relevant to an investigation. These fragments can sometimes be analyzed for readable content or hashed for further comparison.
 <br />
 <br />
@@ -23,8 +30,6 @@ Several techniques exist for file carving. Investigators typically search for fi
 While this method is effective, it has limitations, particularly when headers or footers are missing or if the files are fragmented. Other carving techniques include block carving, which analyzes data on a block-by-block basis, and semantic carving, which examines data using linguistic analysis.
 
 In addition to carving complete files, examiners can also recover valuable file fragments. This is often applicable for non-compressed and non-encrypted files, such as text files, HTML documents, or data from a swap/page file.
-
-## Activity: Manual File Carving Using FTK Imager
 
 ### Instructions:
 
