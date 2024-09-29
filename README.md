@@ -5,6 +5,30 @@
 
 One of the fundamental skills necessary for a forensic investigator is the ability to recover deleted files. When files are deleted, they remain on the storage medium until new data overwrites them. This means that even if a suspect attempts to erase evidence, those files can still be retrieved until the storage space is reused. For this experiment, we will utilize FTK Imager for the recovery process.
 
+Open Notepad and create a new text document. We will input a sample text and save the file with the name "Test."
+
+<img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/866e16f35b97cc26cedf158a5e77354b0fe845fa/FTK%20Imager/3-11.PNG"/></a>
+
+Remove the file by deleting it from your system and permanently delete the file by emptying the Recycle Bin.
+
+<img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/866e16f35b97cc26cedf158a5e77354b0fe845fa/FTK%20Imager/3-12.PNG"/></a>
+
+
+Launch FTK Imager: Open the FTK Imager application on your computer.
+Add Evidence Item: Click on "File" and select "Add Evidence Item..."
+Select Source: In the Select Source window, choose "Logical Drive" and click "Next."
+Choose Source Drive: From the Source Drive Selection, identify and select the drive from which the file was deleted.
+Expand Evidence Tree: In the Evidence Tree pane, click on the source drive to expand its contents.
+Access Root Directory: Click on "[root]" to view the contents of the root directory.
+Locate Recycle Bin: Find and expand the Recycle Bin folder.
+Identify Deleted File: In the File List window, locate the deleted file, which will be marked with an "X." Note that the file may be renamed.
+View File Contents: The contents of the selected file can be displayed in the bottom pane for verification.
+Export Deleted File: Right-click on the deleted file and select "Export Files..."
+Choose Destination: Select a destination folder to save the recovered file; for this example, save it to the Desktop.
+Completion Notification: A message will appear upon successful completion of the export process.
+Verify Recovery: Navigate to the designated folder, locate the recovered file, and open it to confirm successful recovery.
+This guide provides a systematic approach to recovering deleted files using FTK Imager, ensuring a thorough understanding of the process.
+
 ## Activity: Manual File Carving Using FTK Imager
 
 File carving is both an art and a science, especially when dealing with corrupt Master File Tables (MFT) or File Allocation Tables (FAT). In such cases, it may be necessary to manually extract files from allocated space. Additionally, remnants of files can often be found in unallocated or slack space, which may contain valuable information relevant to an investigation. These fragments can sometimes be analyzed for readable content or hashed for further comparison.
