@@ -1,9 +1,11 @@
 <img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/4aa73bedd7db10391b518c13c82f52d892b55e87/FTK%20Imager/logo.jpg"/></a>
 <h1>Recovering Deleted Files & File Carving with FTK Imager</h1>
 
-## 1. Recovering Deleted Files
+## 1. Recovering Deleted Files using FTK Imager
 
-One of the fundamental skills necessary for a forensic investigator is the ability to recover deleted files. When files are deleted, they remain on the storage medium until new data overwrites them. This means that even if a suspect attempts to erase evidence, those files can still be retrieved until the storage space is reused. For this experiment, we will utilize FTK Imager for the recovery process.
+One of the fundamental skills necessary for a forensic investigator is the ability to recover deleted files. When files are deleted, they remain on the storage medium until new data overwrites them. This means that even if a suspect attempts to erase evidence, those files can still be retrieved until the storage space is reused. For this experiment, we will utilize FTK Imager for the recovery process. This guide provides a systematic approach to recovering deleted files using FTK Imager, ensuring a thorough understanding of the process.
+
+### Instructions:
 
 Open Notepad and create a new text document. We will input a sample text and save the file with the name "Test."
 
@@ -13,23 +15,38 @@ Remove the file by deleting it from your system and permanently delete the file 
 
 <img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/866e16f35b97cc26cedf158a5e77354b0fe845fa/FTK%20Imager/3-12.PNG"/></a>
 
+Open the FTK Imager application. Click on "File" and select "Add Evidence Item..."
 
-Launch FTK Imager: Open the FTK Imager application on your computer.
-Add Evidence Item: Click on "File" and select "Add Evidence Item..."
-Select Source: In the Select Source window, choose "Logical Drive" and click "Next."
-Choose Source Drive: From the Source Drive Selection, identify and select the drive from which the file was deleted.
-Expand Evidence Tree: In the Evidence Tree pane, click on the source drive to expand its contents.
-Access Root Directory: Click on "[root]" to view the contents of the root directory.
-Locate Recycle Bin: Find and expand the Recycle Bin folder.
-Identify Deleted File: In the File List window, locate the deleted file, which will be marked with an "X." Note that the file may be renamed.
-View File Contents: The contents of the selected file can be displayed in the bottom pane for verification.
-Export Deleted File: Right-click on the deleted file and select "Export Files..."
-Choose Destination: Select a destination folder to save the recovered file; for this example, save it to the Desktop.
-Completion Notification: A message will appear upon successful completion of the export process.
-Verify Recovery: Navigate to the designated folder, locate the recovered file, and open it to confirm successful recovery.
-This guide provides a systematic approach to recovering deleted files using FTK Imager, ensuring a thorough understanding of the process.
+<img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a6f4812789affa22924d6dcc6342470d247f1067/FTK%20Imager/3-13.png"/></a>
 
-## Activity: Manual File Carving Using FTK Imager
+In the Select Source window, choose "Logical Drive" and click "Next."
+
+<img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a6f4812789affa22924d6dcc6342470d247f1067/FTK%20Imager/3-14.PNG"/></a>
+
+From the Source Drive Selection, identify and select the drive from which the file was deleted.
+
+<img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a6f4812789affa22924d6dcc6342470d247f1067/FTK%20Imager/3-15.PNG"/></a>
+
+In the Evidence Tree pane, click on the source drive to expand its contents. Click on "[root]" to view the contents of the root directory. Find and expand the Recycle Bin folder.
+In the File List window, locate the deleted file, which will be marked with an "X." Note that the file may be renamed.
+The contents of the selected file can be displayed in the bottom pane for verification.
+Right-click on the deleted file and select "Export Files..."
+
+<img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a6f4812789affa22924d6dcc6342470d247f1067/FTK%20Imager/3-16.PNG"/></a>
+
+Select a destination folder to save the recovered file; for this example, we wil save it to the Desktop.
+
+<img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a6f4812789affa22924d6dcc6342470d247f1067/FTK%20Imager/3-17.png"/></a>
+
+A message will appear upon successful completion of the export process.
+
+<img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a6f4812789affa22924d6dcc6342470d247f1067/FTK%20Imager/3-18.PNG"/></a>
+
+Navigate to the designated folder, locate the recovered file, and open it to confirm successful recovery.
+
+<img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a6f4812789affa22924d6dcc6342470d247f1067/FTK%20Imager/3-19.PNG"/></a>
+
+## 2. Manual File Carving Using FTK Imager
 
 File carving is both an art and a science, especially when dealing with corrupt Master File Tables (MFT) or File Allocation Tables (FAT). In such cases, it may be necessary to manually extract files from allocated space. Additionally, remnants of files can often be found in unallocated or slack space, which may contain valuable information relevant to an investigation. These fragments can sometimes be analyzed for readable content or hashed for further comparison.
 <br />
@@ -114,20 +131,5 @@ If the answers suggest that it is the actual EOF marker, the file runs from 0000
 Save the file with a **“.jpg”** extension on your desktop. Open the saved file. The result should be identical to what is shown below.
 
 <img src="https://github.com/Hashdan-M/Recovering-Deleted-Files-File-Carving-with-FTK-Imager/blob/a3582dd9bbda828ea806d9f476a5652b197e7254/FTK%20Imager/3-10.PNG"/></a>
-
-36. Search for the hexadecimal string **25504446** in FTK Imager.
-37. Confirm if this string appears at the start of a sector (it does at **offset 012a000**).
-38. Identify the type of file associated with this signature (it is for PDFs).
-39. The EOF for this file type is **25 25 45 4F 46**.
-40. Using **offset 012a000**, search for the next occurrence of **2525454F46**.
-41. This string appears at **offset 012a440**.
-42. Determine if this is the actual EOF marker (it is likely not, based on context).
-43. Continue searching for the next occurrence of **2525454F46**.
-44. The next instance occurs at **offset 013b00a**.
-45. Highlight from just before the EOF marker to the start of the file at **offset 012a000**.
-46. Hold down **SHIFT** and click on the first byte of the file’s signature.
-47. Right-click and select **“Save Selection…”**.
-48. Save the file with a **“.pdf”** extension.
-49. Open the saved PDF file to ensure it displays as expected.
 
 By following these steps, you can effectively perform manual file carving using FTK Imager, enabling the recovery of deleted files even when traditional methods fail.
